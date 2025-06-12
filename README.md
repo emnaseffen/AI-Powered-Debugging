@@ -27,7 +27,8 @@ Traditional debugging tools often require manual inspection of code and are limi
 The final solution is based on **CodeT5**, a transformer-based model pre-trained on programming languages. The model was fine-tuned for two tasks:
 
 1. **Bug Classification** – Determine if a code snippet is buggy
-2. **Bug Fixing** – Generate corrected code from buggy input
+2. **Bug Localization** – Determine the localization of the bug
+3. **Bug Fixing** – Generate corrected code from buggy input
 
 Earlier approaches included:
 - Binary classification using RandomForest and SVM
@@ -54,7 +55,7 @@ The dataset was collected from open-source repositories and research datasets. I
 Here are some screenshots from the application:
 
 ### 🔍 Example 1 – Project Upload
-![Bug Detection Screenshot](interface1 (1).png)
+![Bug Detection Screenshot](upload_project.png)
 
 ### 🛠️ Example 2 – Bug Detection & Localization
 ![Bug Fixing Screenshot](interface2.png)
